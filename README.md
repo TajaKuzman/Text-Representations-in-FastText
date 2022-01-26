@@ -21,17 +21,19 @@ The setups will be compared based on micro and macro F1 scores, to measure the m
 ### Data Preparation, Experiment Setup
 
 Data:
-* deduplicated GINCO corpus --> 983 texts
+* GINCO corpus with "keep" texts -> 1002 texts
 * original stratified train-dev-test split (60:20:20)
 
 Steps:
-* Transforming the GINCO JSON file to a FastText format
 * Optimising FastText - hyperparameter search on dev split
 * Preliminary experiments with data (on test split) to optimize the FastText performance (the performance of the baseline needs to be high enough so that the differences of performance on transformations, which we expect to be lower, will be visible):
     * Removing noise: 1) label Other 2) instances with secondary labels, 3) instances with secondary labels + tertiary labels, 4) instances with secondary label + tertiary labels + hard parameter
     * Downcasting: 1) Removing infrequent classes - using top 5-10 classes 2) Merging classes
 
 #### Experiment Setup Conclusions
+* Experiments on no. of epochs --> 400 epochs used
+<img style="width:80%" src="experimental-setup-results\Number_of_epochs.png">
+
 * At least 5 training runs for each experiment
 
 ### Experiments on Text Representations
