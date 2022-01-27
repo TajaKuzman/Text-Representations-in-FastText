@@ -19,21 +19,23 @@ The setups will be compared based on micro and macro F1 scores, to measure the m
 ## Steps
 
 ### Data Preparation, Experiment Setup
+See the notebook *1-Preparing_Data_Hyperparameter_Search.ipynb*.
 
 Data:
-* GINCO corpus with "keep" texts -> 1002 texts
-* original stratified train-dev-test split (60:20:20)
+* GINCO corpus with "keep" texts (reasons: more text, but duplicates omitted as they can be unrepresentative for the genre type)
+* smaller number of labels: downsampled 12 set, labels with too few instances discarded, fuzzy labels (*Other*, *List of Summaries/Excerpts*) discarded, texts marked with *Hard* discarded --> 5 labels, 688 texts
+* original stratified train-dev-test split (60:20:20): 410:141:137
 
-Steps:
-* Optimising FastText - hyperparameter search on dev split
-* Preliminary experiments with data (on test split) to optimize the FastText performance (the performance of the baseline needs to be high enough so that the differences of performance on transformations, which we expect to be lower, will be visible):
-    * Removing noise: 1) label Other 2) instances with secondary labels, 3) instances with secondary labels + tertiary labels, 4) instances with secondary label + tertiary labels + hard parameter
-    * Downcasting: 1) Removing infrequent classes - using top 5-10 classes 2) Merging classes
+Preliminary Experiments:
+* Optimising FastText - hyperparameter search on dev split --> average micro and macro F1 scores of 0.625 +/- 0.0036 and 0.618 +/- 0.003
 
 #### Experiment Setup Conclusions
-* Experiments on no. of epochs --> 400 epochs used
-<img style="width:80%" src="experimental-setup-results\Number_of_epochs.png">
-
-* At least 5 training runs for each experiment
+* Experiments on no. of epochs --> 350 epochs used
+<img style="width:80%" src="experimental-setup-results\Number-of-epochs.png">
+* Experiments on learning rate --> lr = 0.7
+<img style="width:80%" src="experimental-setup-results\Learning-rate.png">
+* Experiments on number of word n-grams used --> suprisingly, using unigrams (default) gives the best results
+<img style="width:80%" src="experimental-setup-results\Ngrams.png">
+* Default context window (5)
 
 ### Experiments on Text Representations
