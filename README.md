@@ -19,14 +19,14 @@ The setups will be compared based on micro and macro F1 scores, to measure the m
 ## Steps
 
 ### Data Preparation, Experiment Setup
-See the notebook *1-Preparing_Data_Hyperparameter_Search.ipynb*.
+See the notebook *1-Preparing_Data_Hyperparameter_Search.ipynb* where I found the best hyperparameters for the task, and *2-Language-Processing-of-GINCO.ipynb* where I linguistically preprocessed data with the CLASSLA pipeline.
 
 Data:
 * GINCO corpus with "keep" texts (reasons: more text, but duplicates omitted as they can be unrepresentative for the genre type)
 * smaller number of labels: downsampled 12 set, labels with too few instances discarded, fuzzy labels (*Other*, *List of Summaries/Excerpts*) discarded, texts marked with *Hard* discarded --> 5 labels, 688 texts
 * original stratified train-dev-test split (60:20:20): 410:141:137
 
-Preliminary Experiments:
+Preliminary experiments:
 * Optimising FastText - hyperparameter search on dev split --> average micro and macro F1 scores of 0.625 +/- 0.0036 and 0.618 +/- 0.003
 
 #### Experiment Setup Conclusions
