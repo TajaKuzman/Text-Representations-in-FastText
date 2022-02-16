@@ -39,3 +39,7 @@ Preliminary experiments:
 * Default context window (5)
 
 ### Experiments on Text Representations
+
+**Results**:
+- baseline text: micro F1: 0.56 +/- 0.0, macro F1: 0.589 +/- 0.0
+- lower-cased: 
