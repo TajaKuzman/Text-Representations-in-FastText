@@ -41,5 +41,17 @@ Preliminary experiments:
 ### Experiments on Text Representations
 
 **Results**:
-- baseline text: micro F1: 0.56 +/- 0.0, macro F1: 0.589 +/- 0.0
-- lower-cased: 
+* baseline text: micro F1: 0.56 +/- 0.0, macro F1: 0.589 +/- 0.0
+* lower-cased:  micro F1: 0.553 +/- 0.0045, macro F1: 0.587 +/- 0.009 - slightly lower results
+* punctuation removed: micro F1: micro F1: 0.58 +/- 0.0028, macro F1: 0.616 +/- 0.0024 - improved results, especially forum (see the graph)
+* numbers removed: micro F1: 0.583 +/- 0.0028, macro F1: 0.595 +/- 0.0025 - slight improvement, except in Forum, where it is worse
+* stopwords removed: 
+* lower-cased, punctuation removed, numbers removed, stopwords removed
+* lemmas
+* part-of-speech tags
+* morphosyntactic descriptors (MSD)
+* syntactic dependencies
+
+Reduced features:
+* named entities
+* only nouns + verbs + adjectives + adverbs
