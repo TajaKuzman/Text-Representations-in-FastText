@@ -52,7 +52,8 @@ Preliminary experiments:
 * morphosyntactic descriptors (MSD): micro F1: 0.563 +/- 0.0072, macro F1: 0.536 +/- 0.019, increase in micro, decrease in macro, improvement in News and Information, high variation in Forum
 * syntactic dependencies: micro F1: 0.61 +/- 0.0, macro F1: 0.639 +/- 0.00044 - the best results, high improvement, especially in News, Forum, Opinion. Decrease in Promotion.
 
-Reduced features:
-* named entities: micro F1: 0.377 +/- 0.0053, macro F1: 0.255 +/- 0.008 - no decrease in News, lesser decrease in Promotion, very high decrease in Information/Explanation, Forum and Opinion
-* stopwords removed
-* only nouns + verbs + adjectives + adverbs
+Reduced features (lemmas in selected PoS class used, other replaced with O):
+* only open class words - stopwords removed (ADP, AUX, CCONJ and SCONJ, DET, NUM, PART and PRON)
+* only stop words
+* only classes which denote subjectivity - ADJ, ADV, PART
+* only PROPN, NOUN and VERB
