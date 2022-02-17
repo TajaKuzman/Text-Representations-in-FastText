@@ -45,13 +45,14 @@ Preliminary experiments:
 * lower-cased:  micro F1: 0.553 +/- 0.0045, macro F1: 0.587 +/- 0.009 - slightly lower results
 * punctuation removed: micro F1: micro F1: 0.58 +/- 0.0028, macro F1: 0.616 +/- 0.0024 - improved results, especially forum (see the graph)
 * numbers removed: micro F1: 0.583 +/- 0.0028, macro F1: 0.595 +/- 0.0025 - slight improvement, except in Forum, where it is worse
-* stopwords removed: 
-* lower-cased, punctuation removed, numbers removed, stopwords removed
-* lemmas
-* part-of-speech tags
-* morphosyntactic descriptors (MSD)
-* syntactic dependencies
+* lower-cased, punctuation removed, numbers removed: micro F1: 0.56 +/- 0.0, macro F1: 0.598 +/- 0.0 - no improvements in micro level, very slight improvements in macro level - improvement in forum, otherwise mostly no
+
+* lemmas: micro F1: 0.597 +/- 0.0053, macro F1: 0.601 +/- 0.0035 - significant improvement over the baseline, especially for Information/Explanation, Promotion, for News no change, for Forum and Opinion worse
+* part-of-speech tags (upos): micro F1: 0.54 +/- 0.0053, macro F1: 0.547 +/- 0.0056 - decrease overall, but in News and Opinion increase
+* morphosyntactic descriptors (MSD): micro F1: 0.563 +/- 0.0072, macro F1: 0.536 +/- 0.019, increase in micro, decrease in macro, improvement in News and Information, high variation in Forum
+* syntactic dependencies: micro F1: 0.61 +/- 0.0, macro F1: 0.639 +/- 0.00044 - the best results, high improvement, especially in News, Forum, Opinion. Decrease in Promotion.
 
 Reduced features:
-* named entities
+* named entities: micro F1: 0.377 +/- 0.0053, macro F1: 0.255 +/- 0.008 - no decrease in News, lesser decrease in Promotion, very high decrease in Information/Explanation, Forum and Opinion
+* stopwords removed
 * only nouns + verbs + adjectives + adverbs
