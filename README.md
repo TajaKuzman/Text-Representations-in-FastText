@@ -53,7 +53,18 @@ Preliminary experiments:
 * syntactic dependencies: micro F1: 0.61 +/- 0.0, macro F1: 0.639 +/- 0.00044 - the best results, high improvement, especially in News, Forum, Opinion. Decrease in Promotion.
 
 Reduced features (lemmas in selected PoS class used, other replaced with O):
-* only open class words - stopwords removed (ADP, AUX, CCONJ and SCONJ, DET, NUM, PART and PRON)
-* only stop words
-* only classes which denote subjectivity - ADJ, ADV, PART
-* only PROPN, NOUN and VERB
+* only open class words - stopwords removed (ADP, AUX, CCONJ and SCONJ, DET, NUM, PART and PRON): micro F1: 0.563 +/- 0.0072, macro F1: 0.535 +/- 0.015 - decrease in macro, slight increase in micro - stopwords do not have a big impact - huge decrease in Forum 
+* only stop words: micro F1: 0.526 +/- 0.0053, macro F1: 0.559 +/- 0.0067 - decrease, especially in micro - same result for Forum, decrease in News and Information
+* only classes which denote subjectivity - ADJ, ADV, PART: micro F1: 0.468 +/- 0.009, macro F1: 0.408 +/- 0.019 - much lower results, huge decrease for Forum, for Opinion actually slightly better results
+* only PROPN, NOUN and VERB: micro F1: 0.496 +/- 0.0078, macro F1: 0.439 +/- 0.015 - decrease, for Information/Explanation increase, for others decrease, especially big for Forum and Opinion
+
+Alternative representations without context (window = 1) - very very slight difference:
+* baseline text: micro F1: 0.559 +/- 0.0028, macro F1: 0.588 +/- 0.002 - slightly different, almost the same
+* lemmas: micro F1: 0.597 +/- 0.0053, macro F1: 0.602 +/- 0.0039
+* part-of-speech tags (upos): micro F1: 0.546 +/- 0.0078, macro F1: 0.555 +/- 0.012
+* morphosyntactic descriptors (MSD): micro F1: 0.566 +/- 0.0069, macro F1: 0.539 +/- 0.014
+* syntactic dependencies: micro F1: 0.609 +/- 0.0028, macro F1: 0.637 +/- 0.0026
+
+Additional experiment - on all 12 labels (primary_level_3), all 1002 texts:
+* baseline: micro F1: 0.425 +/- 0.0043, macro F1: 0.273 +/- 0.005
+* dependencies: micro F1: 0.48 +/- 0.0018, macro F1: 0.337 +/- 0.018 - improved results

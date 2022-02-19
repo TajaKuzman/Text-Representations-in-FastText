@@ -713,5 +713,265 @@
 },
 "run": 4,
 "experiment": "ner"
+},
+{
+"microF1": 0.574468085106383,
+"macroF1": 0.5527281762165484,
+"label_scores": {
+"__label__Information/Explanation": 0.5818181818181818,
+"__label__Promotion": 0.6388888888888888,
+"__label__News": 0.5813953488372093,
+"__label__Forum": 0.46153846153846156,
+"__label__Opinion/Argumentation": 0.5
+},
+"run": 0,
+"experiment": "stopwords_removed"
+},
+{
+"microF1": 0.5673758865248227,
+"macroF1": 0.5473165254624318,
+"label_scores": {
+"__label__Information/Explanation": 0.5818181818181818,
+"__label__Promotion": 0.6027397260273972,
+"__label__News": 0.5813953488372093,
+"__label__Forum": 0.46153846153846156,
+"__label__Opinion/Argumentation": 0.509090909090909
+},
+"run": 1,
+"experiment": "stopwords_removed"
+},
+{
+"microF1": 0.5602836879432624,
+"macroF1": 0.5202958038252156,
+"label_scores": {
+"__label__Information/Explanation": 0.5818181818181818,
+"__label__Promotion": 0.6216216216216216,
+"__label__News": 0.5647058823529412,
+"__label__Forum": 0.3333333333333333,
+"__label__Opinion/Argumentation": 0.5
+},
+"run": 2,
+"experiment": "stopwords_removed"
+},
+{
+"microF1": 0.5531914893617021,
+"macroF1": 0.5152061552125267,
+"label_scores": {
+"__label__Information/Explanation": 0.5818181818181818,
+"__label__Promotion": 0.6027397260273972,
+"__label__News": 0.5581395348837209,
+"__label__Forum": 0.3333333333333333,
+"__label__Opinion/Argumentation": 0.5
+},
+"run": 3,
+"experiment": "stopwords_removed"
+},
+{
+"microF1": 0.5602836879432624,
+"macroF1": 0.5410741076558216,
+"label_scores": {
+"__label__Information/Explanation": 0.5555555555555556,
+"__label__Promotion": 0.6301369863013699,
+"__label__News": 0.5581395348837209,
+"__label__Forum": 0.46153846153846156,
+"__label__Opinion/Argumentation": 0.5
+},
+"run": 4,
+"experiment": "stopwords_removed"
+},
+{
+"microF1": 0.5319148936170213,
+"macroF1": 0.5660581310039663,
+"label_scores": {
+"__label__Information/Explanation": 0.4838709677419355,
+"__label__Promotion": 0.5970149253731343,
+"__label__News": 0.5208333333333334,
+"__label__Forum": 0.8,
+"__label__Opinion/Argumentation": 0.42857142857142855
+},
+"run": 0,
+"experiment": "only_stopwords"
+},
+{
+"microF1": 0.524822695035461,
+"macroF1": 0.5573196517412936,
+"label_scores": {
+"__label__Information/Explanation": 0.46874999999999994,
+"__label__Promotion": 0.5970149253731343,
+"__label__News": 0.5208333333333334,
+"__label__Forum": 0.8,
+"__label__Opinion/Argumentation": 0.4
+},
+"run": 1,
+"experiment": "only_stopwords"
+},
+{
+"microF1": 0.5319148936170213,
+"macroF1": 0.5660581310039663,
+"label_scores": {
+"__label__Information/Explanation": 0.4838709677419355,
+"__label__Promotion": 0.5970149253731343,
+"__label__News": 0.5208333333333334,
+"__label__Forum": 0.8,
+"__label__Opinion/Argumentation": 0.42857142857142855
+},
+"run": 2,
+"experiment": "only_stopwords"
+},
+{
+"microF1": 0.5177304964539007,
+"macroF1": 0.5480406403746533,
+"label_scores": {
+"__label__Information/Explanation": 0.46874999999999994,
+"__label__Promotion": 0.5970149253731343,
+"__label__News": 0.5154639175257731,
+"__label__Forum": 0.8,
+"__label__Opinion/Argumentation": 0.358974358974359
+},
+"run": 3,
+"experiment": "only_stopwords"
+},
+{
+"microF1": 0.524822695035461,
+"macroF1": 0.5568565274671937,
+"label_scores": {
+"__label__Information/Explanation": 0.47619047619047616,
+"__label__Promotion": 0.5970149253731343,
+"__label__News": 0.5208333333333334,
+"__label__Forum": 0.8,
+"__label__Opinion/Argumentation": 0.3902439024390244
+},
+"run": 4,
+"experiment": "only_stopwords"
+},
+{
+"microF1": 0.475177304964539,
+"macroF1": 0.4059228255472,
+"label_scores": {
+"__label__Information/Explanation": 0.3255813953488372,
+"__label__Promotion": 0.5569620253164557,
+"__label__News": 0.5252525252525252,
+"__label__Forum": 0.1818181818181818,
+"__label__Opinion/Argumentation": 0.44000000000000006
+},
+"run": 0,
+"experiment": "only_subjective_classes"
+},
+{
+"microF1": 0.45390070921985815,
+"macroF1": 0.3899846667094374,
+"label_scores": {
+"__label__Information/Explanation": 0.3076923076923077,
+"__label__Promotion": 0.5066666666666667,
+"__label__News": 0.49541284403669733,
+"__label__Forum": 0.1818181818181818,
+"__label__Opinion/Argumentation": 0.45833333333333337
+},
+"run": 1,
+"experiment": "only_subjective_classes"
+},
+{
+"microF1": 0.46099290780141844,
+"macroF1": 0.3946706343302088,
+"label_scores": {
+"__label__Information/Explanation": 0.3076923076923077,
+"__label__Promotion": 0.5066666666666667,
+"__label__News": 0.5090909090909091,
+"__label__Forum": 0.1818181818181818,
+"__label__Opinion/Argumentation": 0.46808510638297873
+},
+"run": 2,
+"experiment": "only_subjective_classes"
+},
+{
+"microF1": 0.475177304964539,
+"macroF1": 0.44276621539704986,
+"label_scores": {
+"__label__Information/Explanation": 0.41666666666666663,
+"__label__Promotion": 0.5,
+"__label__News": 0.5148514851485148,
+"__label__Forum": 0.3333333333333333,
+"__label__Opinion/Argumentation": 0.44897959183673464
+},
+"run": 3,
+"experiment": "only_subjective_classes"
+},
+{
+"microF1": 0.475177304964539,
+"macroF1": 0.40913374225315113,
+"label_scores": {
+"__label__Information/Explanation": 0.3414634146341463,
+"__label__Promotion": 0.5405405405405405,
+"__label__News": 0.5137614678899082,
+"__label__Forum": 0.1818181818181818,
+"__label__Opinion/Argumentation": 0.46808510638297873
+},
+"run": 4,
+"experiment": "only_subjective_classes"
+},
+{
+"microF1": 0.49645390070921985,
+"macroF1": 0.4506327432158634,
+"label_scores": {
+"__label__Information/Explanation": 0.6,
+"__label__Promotion": 0.5454545454545455,
+"__label__News": 0.5176470588235293,
+"__label__Forum": 0.2857142857142857,
+"__label__Opinion/Argumentation": 0.30434782608695654
+},
+"run": 0,
+"experiment": "only_nouns_verbs"
+},
+{
+"microF1": 0.48226950354609927,
+"macroF1": 0.4182581373570109,
+"label_scores": {
+"__label__Information/Explanation": 0.6,
+"__label__Promotion": 0.5454545454545455,
+"__label__News": 0.49411764705882355,
+"__label__Forum": 0.15384615384615383,
+"__label__Opinion/Argumentation": 0.2978723404255319
+},
+"run": 1,
+"experiment": "only_nouns_verbs"
+},
+{
+"microF1": 0.5035460992907801,
+"macroF1": 0.460150351561612,
+"label_scores": {
+"__label__Information/Explanation": 0.6101694915254238,
+"__label__Promotion": 0.5789473684210527,
+"__label__News": 0.5121951219512195,
+"__label__Forum": 0.2857142857142857,
+"__label__Opinion/Argumentation": 0.3137254901960784
+},
+"run": 2,
+"experiment": "only_nouns_verbs"
+},
+{
+"microF1": 0.5035460992907801,
+"macroF1": 0.43346995129826615,
+"label_scores": {
+"__label__Information/Explanation": 0.6101694915254238,
+"__label__Promotion": 0.5641025641025642,
+"__label__News": 0.5348837209302325,
+"__label__Forum": 0.15384615384615383,
+"__label__Opinion/Argumentation": 0.30434782608695654
+},
+"run": 3,
+"experiment": "only_nouns_verbs"
+},
+{
+"microF1": 0.49645390070921985,
+"macroF1": 0.430054945054945,
+"label_scores": {
+"__label__Information/Explanation": 0.6333333333333334,
+"__label__Promotion": 0.5714285714285715,
+"__label__News": 0.5,
+"__label__Forum": 0.15384615384615383,
+"__label__Opinion/Argumentation": 0.2916666666666667
+},
+"run": 4,
+"experiment": "only_nouns_verbs"
 }
 ]
