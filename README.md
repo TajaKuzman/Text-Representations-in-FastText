@@ -8,11 +8,10 @@ In this task, I will analyse what importance different linguistic features have 
 I will perform text classification with the linear model fastText. For the experiments, I will use the Slovene Web genre identification corpus GINCO 1.0  which consists of 1002 texts, manually annotated with 24 genre labels.
 I will train and test the model on:
 * baseline: plain text as extracted from the web during the creation of web corpora (used in previous experiments)
-* lower-cased
+* pre-processed: lower-cased, punctuation removed, numbers removed
 * reduced to lemmas
 * transformed into part-of-speech tags
-* with function words (stopwords) removed
-* consisting only of the words belonging to a certain word type, i.e. only nouns, only verbs, only adjectives, etc.
+* (consisting only of the words belonging to a certain word type, i.e. only nouns, only verbs, only adjectives, etc.)
 
 The setups will be compared based on micro and macro F1 scores, to measure the models’ performance on the instance level and the label level, and confusion matrices.
 
