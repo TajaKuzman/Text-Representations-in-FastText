@@ -45,6 +45,8 @@ Preliminary experiments:
 * punctuation removed: micro F1: micro F1: 0.58 +/- 0.0028, macro F1: 0.616 +/- 0.0024 - improved results, especially forum (see the graph)
 * numbers removed: micro F1: 0.583 +/- 0.0028, macro F1: 0.595 +/- 0.0025 - slight improvement, except in Forum, where it is worse
 * lower-cased, punctuation removed, numbers removed: micro F1: 0.56 +/- 0.0, macro F1: 0.598 +/- 0.0 - no improvements in micro level, very slight improvements in macro level - improvement in forum, otherwise mostly no
+* lower-cased, punctuation removed, numbers removed, stopwords removed: micro F1: 0.596 +/- 0.0
+macro F1: 0.597 +/- 0.00029 - improvement, more in micro than macro
 
 * lemmas: micro F1: 0.597 +/- 0.0053, macro F1: 0.601 +/- 0.0035 - significant improvement over the baseline, especially for Information/Explanation, Promotion, for News no change, for Forum and Opinion worse
 * part-of-speech tags (upos): micro F1: 0.54 +/- 0.0053, macro F1: 0.547 +/- 0.0056 - decrease overall, but in News and Opinion increase
