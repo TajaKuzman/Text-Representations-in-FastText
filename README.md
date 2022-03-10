@@ -40,7 +40,7 @@ Preliminary experiments:
 ### Experiments on Text Representations
 
 The figure with main results:
-<img style="width:80%" src="results\baseline-versus-linguistic-processing2.png">
+<img style="width:100%" src="results\baseline-versus-linguistic-processing2.png">
 
 Main conclusions:
 * the best textual representation is dependencies.
