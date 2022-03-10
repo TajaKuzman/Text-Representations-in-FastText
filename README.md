@@ -39,7 +39,17 @@ Preliminary experiments:
 
 ### Experiments on Text Representations
 
-**Results**:
+The figure with main results:
+<img style="width:80%" src="results\baseline-versus-linguistic-processing2.png">
+
+Main conclusions:
+* the best textual representation is dependencies.
+* some genre labels favor lexical textual representations, others, such as *Forum* are better classified when using grammatical representations
+
+
+For more figures regarding the results, see the folder *results*. The script for analyzing results is *6-Result_Analysis.ipynb*
+
+**Results (details)**:
 * baseline text: micro F1: 0.56 +/- 0.0, macro F1: 0.589 +/- 0.0
 * lower-cased:  micro F1: 0.553 +/- 0.0045, macro F1: 0.587 +/- 0.009 - slightly lower results
 * punctuation removed: micro F1: micro F1: 0.58 +/- 0.0028, macro F1: 0.616 +/- 0.0024 - improved results, especially forum (see the graph)
