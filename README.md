@@ -17,6 +17,20 @@ I train and test the fastText model on:
 
 The setups are compared based on micro and macro F1 scores, to measure the models’ performance on the instance level and the label level, and confusion matrices.
 
+The FastText model was used as it achieves the best results on the task, when compared with other common classifiers. The comparison is based on the baseline text and other classifiers used the TF-IDF representation. The classifiers are ordered based on the macro F1 scores.
+
+| Model                  |   Micro F1 |   Macro F1 |
+|:-----------------------|----------:|----------:|
+| Dummy Classifier - Most Frequent        |     0.241 |     0.078 |
+| Dummy Classifier - Stratified       |     0.177 |     0.162 |
+| Decision Tree |     0.319 |     0.323 |
+| Multinomial Naive Bayes classifier          |     0.518 |     0.342 |
+| Complement Naive Bayes classifier           |     0.539 |     0.416 |
+| Logistic Regression     |     0.511 |     0.379 |
+| Support Vector Machine (SVC)                    |     0.496 |     0.337 |
+| Random Forest classifier |     0.504 |     0.36  |
+| FastText               |     0.56  |     0.589 |
+
 ## Steps
 
 ### Data Preparation, Experiment Setup
