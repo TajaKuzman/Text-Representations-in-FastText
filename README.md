@@ -96,3 +96,41 @@ Alternative representations without context (window = 1) - very very slight diff
 Additional experiment - on all 12 labels (primary_level_3), all 1002 texts:
 * baseline: micro F1: 0.425 +/- 0.0043, macro F1: 0.273 +/- 0.005
 * dependencies: micro F1: 0.48 +/- 0.0018, macro F1: 0.337 +/- 0.018 - improved results
+
+#### Using a Transformer model
+
+To compare the fastText's performance with the performance of Transformer models, I trained and tested the base-sized XLM-RoBERTa model on the baseline text.
+
+During the hyperparameter search, I searched for the optimum number of epochs, which revealed to be 13. The hyperparameters that we used are the following:
+
+```
+        args= {
+            "overwrite_output_dir": True,
+            "num_train_epochs": 13,
+            "train_batch_size":8,
+            "learning_rate": 1e-5,
+            "labels_list": LABELS,
+            "max_seq_length": 512,
+            "save_steps": -1,
+            # Only the trained model will be saved - to prevent filling all of the space
+            "save_model_every_epoch":False,
+            "wandb_project": 'GINCO-hyperparameter-search',
+            "silent": True,
+            }
+```
+
+The trained model was saved to the Wandb directory:
+```
+import wandb
+run = wandb.init()
+# Load the saved model
+artifact = run.use_artifact('tajak/GINCO-hyperparameter-search/GINCO-5-labels-classifier:v0', type='model')
+artifact_dir = artifact.download()
+
+# Loading a local save
+model = ClassificationModel(
+    "xlmroberta", "artifacts/GINCO-5-labels-classifier:v0")
+```
+
+Results on dev split: Macro f1: 0.82, Micro f1: 0.818
+Results on test split: Macro f1: 0.813, Micro f1: 0.816
